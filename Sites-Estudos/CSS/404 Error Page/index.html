@@ -18,12 +18,13 @@
 
     <script type="text/javascript">
         var container = document.querySelector(".container");
-        window.onmousemove = function(e){
+        window.onmousemove = ScreenMove(window.MouseEvent)
+
+        function ScreenMove(e){
             var x = -e.clientX/5,
                 y = -e.clientY/5
             container.style.backgroundPositionX = x + 'px'
             container.style.backgroundPositionY = y + 'px'
-
         }
     </script>
 </body>
