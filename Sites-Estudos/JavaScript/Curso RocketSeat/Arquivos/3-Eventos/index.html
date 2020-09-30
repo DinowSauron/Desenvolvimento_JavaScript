@@ -8,13 +8,34 @@
 </head>
 <body>
     Hello world!
-
     <div id="app">
-        <button>press me</button>
+        <input type="text" name="nome" id="nome1">
+        <button class="botão">press me</button>
+        <br>
+        <br>
+        <input type="text" name="nome" id="nome2">
+        <button class="botão">press me</button>
     </div>
 
     <script>
-        
+        //https://app.rocketseat.com.br/node/curso-java-script/group/manipulando-a-dom/lesson/lidando-com-elementos
+        /*
+        //var inputElement = document.getElementById("nome1"); //id é unico!
+        //var inputElement = document.getElementsByTagName("input"); //retorna um vetor [Num]
+        //var inputElement = document.getElementsByClassName("botão")
+        //var inputElement = document.querySelector("body div#app input"); //retorna um unico elemento
+        var inputElement = document.querySelectorAll("input[name=nome]"); //retorna todos
+        console.log(inputElement);
+        */
+
+
+        inpElement = document.querySelector("#nome1")
+        btnElement = document.querySelector("button.botão")
+
+        btnElement.onclick = function(){
+            var text = inpElement.value;
+            alert(text)
+        }
     </script>
 </body>
 </html>
