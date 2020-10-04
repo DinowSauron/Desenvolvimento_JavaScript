@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Button</title>
+</head>
+<body>
+    <div id="container">
+        <input type="button" value="Create a new Square" onclick="AddSquare()">
+    </div>
+    
+    <script>
+        function AddSquare(){
+            var squareElement = document.createElement("div");
+            squareElement.setAttribute("Class", "Square");
+            squareElement.style.margin = "10px";
+            squareElement.style.width = "100px";
+            squareElement.style.height = "100px";
+            squareElement.style.backgroundColor = "#f00";
+
+            var container = document.querySelector("#container");
+            container.appendChild(squareElement);
+        }
+    </script>
+</body>
+</html>
