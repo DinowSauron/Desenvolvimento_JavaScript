@@ -17,8 +17,24 @@ var minhaPromise = function(){
     });
 }
 
+
+
 minhaPromise()
     .then(function(response) {
+        console.log("Requisição XML");
+        console.log(response);
+    })
+    .catch(function(error){
+        console.warn(error);
+    })
+
+
+//com axios
+//<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+//importe a blibioteca..
+axios.get('https://api.github.com/users/DinowSauron') 
+    .then(function(response) {
+        console.log("Requisição AXIOS");
         console.log(response);
     })
     .catch(function(error){
