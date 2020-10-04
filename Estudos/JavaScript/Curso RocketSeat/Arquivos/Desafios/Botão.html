@@ -7,6 +7,7 @@
 </head>
 <body>
     <div id="container">
+        <ul></ul>
         <input type="button" value="Create a new Square" onclick="AddSquare()">
     </div>
     
@@ -19,9 +20,23 @@
             squareElement.style.height = "100px";
             squareElement.style.backgroundColor = "#f00";
 
+            squareElement.onmouseenter = function() {
+                squareElement.style.backgroundColor = getRandomColor();
+            }
+
             var container = document.querySelector("#container");
             container.appendChild(squareElement);
         }
+
+        function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+        }
+
     </script>
 </body>
 </html>
