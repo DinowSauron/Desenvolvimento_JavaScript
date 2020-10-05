@@ -24,3 +24,4 @@ document.querySelector('#btnTodo').onclick = function(){
     MinhaLista.addTodo();
 }
 
+//https://app.rocketseat.com.br/node/curso-java-script-es-6/group/conceitos/lesson/const-and-let
