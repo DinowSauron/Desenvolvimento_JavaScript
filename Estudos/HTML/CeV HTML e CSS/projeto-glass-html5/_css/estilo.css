@@ -2,7 +2,15 @@
 
 body
 {
-    /*background-color: gray;*/
+    background-color: gray;
+}
+div#interface
+{
+    width: 800px;
+    background-color: white;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 p
 {
@@ -59,9 +67,26 @@ nav#menu li
     background-color: #dddddd;
     padding: 5px;
     margin: 2px;
+    transition: 0.2s;
+}
+nav#menu li:hover
+{
+    background-color: #606060;
+    cursor: pointer;
 }
 
 nav#menu h1
 {
     display: none;
+}
+
+nav#menu a
+{
+    color: #000000;
+    text-decoration: none;
+    transition: .2s;
+}
+nav#menu li:hover a
+{
+    color: #ffffff;
 }
