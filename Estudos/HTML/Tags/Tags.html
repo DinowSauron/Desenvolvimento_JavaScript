@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        table
+        {
+            border: 1px solid #606060;
+            border-spacing: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table td
+        {
+            border: 1px solid #606060;
+            padding: 5px;
+        }
+        table caption
+        {
+            border: 2px solid #606060;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <p>
@@ -78,8 +98,31 @@ for(int x = 0; x &lt= mainWheels.lenght(); x++)
 
         <br><!-- a, gera uma ancora para outro site, Anchor, com href(hypertext reference) e com target(_blank para uma nova guia | _self abre na mesma aba, valor padrão!)-->
         <a href="https://www.google.com/glass/start/" target="_blank">Google Glass link externo</a>
+        <a href="https://www.google.com/glass/start/" target="_blank">Google Glass link externo</a>
+        <a href="https://www.google.com/glass/start/" target="_blank">Google Glass link externo</a>
+        <a href="https://www.google.com/glass/start/" target="_blank">Google Glass link externo</a>
 
         </nav>
+
+        <br><!-- table, cria uma tabela! - utilize caption, para titulo, tr para linhas, td para dados-->
+        <table>
+            <!-- Caption - cria um titulo -->
+            <!-- tr - table row, row = linha -->
+            <!-- td - table data, um dado, um valor -->
+            <!-- rowspan='int' - define o proximo td para ser da mesma categoria-->
+            <!-- colspan='int' - opupará mais de uma coluna-->
+
+            <caption>Especificações Naturais</caption>
+            <tr><td>Tela:</td><td>Resolução equivalente a tela de 25"</td></tr> 
+            <tr><td rowspan="2">Camera:</td><td> 5MP para fotos</td></tr>
+            <tr><td>720p para vídeos</td></tr>
+            <tr><td rowspan="2">Conectividade:</td><td>Wi-Fi</td></tr>
+            <tr><td>Bluetooth</td></tr>
+            <tr><td>Memória Interna:</td><td> 12GB</td></tr>
+            <tr><td>Memória Externa:</td><td> expansuivel até 8Gb</td></tr>
+            <tr><td colspan="2">Consulte os preços nas lojas</td></tr>
+            <tr><td colspan="2">Este item possuí CSS.</td></tr>
+        </table>
     </p>
 </body>
 </html>
