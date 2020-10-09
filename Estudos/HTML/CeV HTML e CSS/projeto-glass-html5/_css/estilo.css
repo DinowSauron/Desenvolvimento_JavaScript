@@ -58,6 +58,7 @@ table#specs caption span
 
 div#interface
 {
+    position: relative;
     width: 800px;
     background-color: white;
     margin: 10px auto 10px auto;
@@ -122,7 +123,7 @@ header#header img#icone
 {
     position: absolute;
     display: flex;
-    left: 820px;
+    left: 650px;
     top: 90px;
 }
 header#header
@@ -189,7 +190,7 @@ nav#menu ul
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    left: 200px;
 }
 nav#menu li
 {
@@ -220,6 +221,8 @@ nav#menu li:hover a
 {
     color: #ffffff;
 }
+
+
 
 section#corpo
 {
