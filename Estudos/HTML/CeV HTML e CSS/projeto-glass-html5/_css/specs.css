@@ -1,0 +1,20 @@
+section#conteudo
+{
+    display: inline;
+    width: 1000px;
+    margin: auto;
+}
+iframe#framespec
+{
+    width: 295px;
+    height: 300px;
+    vertical-align: top;
+}
+iframe#framespec::-webkit-scrollbar
+{
+    display: none;
+}
+area
+{
+    outline: none;
+}
