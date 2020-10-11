@@ -25,7 +25,7 @@ body
     height: 2vw;
     height: calc(2vw * var(--i));
     margin: 0 1vw;
-    border-radius: 2vw;
+    border-radius: 50%;
     box-shadow: inset -.4vw -.4vw .4vw rgba(185, 162, 181, 0.63),
                 inset .4vw .4vw .4vw rgba(0,0,0,.1);
     animation: animate 7s linear infinite;
