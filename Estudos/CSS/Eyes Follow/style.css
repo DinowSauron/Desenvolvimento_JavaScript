@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(#4b2b5c, #1d0824)
+}
+.box{
+    display: flex;
+}
+.box .google{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: block;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 50%;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.2),
+                inset 0 0 15px rgb(80, 43, 82),
+                inset 0 0 25px rgb(131, 83, 141);
+}
+.box .google .brow{
+    background: #000;
+    position: absolute;
+    border-radius: 30px;
+    width: 120px;
+    height: 22px;
+    top: -5px;
+    z-index: 5;
+}
+.left{
+    right: -15px;
+    transform: rotate(20deg)
+}
+.right{
+    left: -15px;
+    transform: rotate(-20deg)
+}
+.box .eye{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+.box .eye::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 35px;
+    width: 45px;
+    height: 45px;
+    background: #000;
+
+    transform: translate(-50%,-50%);
+    border: 10px solid rgb(209, 5, 5);
+    filter: blur(1.2px);
+    box-sizing: border-box;
+}

@@ -5,7 +5,7 @@ var buttonElement = document.querySelector("#app button");
 var todos = JSON.parse(localStorage.getItem("ListTodo")) || []; //se não achar um valor seta o outro!
  
 function renderTodo(){
-    listElement.innerHTML = ""
+    listElement.innerHTML = "";
 
     for(todo of todos){
         var todoElement = document.createElement("li");
