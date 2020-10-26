@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Defense</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="base">
+        <div class="hull">
+
+            <div class="tower"></div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector("body").addEventListener("mousemove", towerball);
+
+        function towerball(){
+            const tower = document.querySelectorAll(".tower");
+            tower.forEach(tower => {
+                let x = tower.getBoundingClientRect().left + (tower.clientWidth / 2);
+                let y = tower.getBoundingClientRect().top + (tower.clientHeight / 2);
+
+                let radian = Math.atan2(event.pageY - y, event.pageX - x);
+                let rotation = (radian * (180 / Math.PI) * 1) + 180;
+                
+                tower.style.transform = "rotate("+rotation+"deg)";
+            });
+        }
+        function shootBall(){
+            const tower = document.querySelectorAll(".tower");
+            
+        }
+    </script>
+</body>
+</html>
