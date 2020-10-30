@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #c8ffd9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#cat{
+    position: relative;
+    width: 200px;
+    height: 135px;
+    border-radius: 80px;
+    background: #063a46;
+}
